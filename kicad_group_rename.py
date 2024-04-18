@@ -30,7 +30,7 @@ class GroupRenamePlugin(pcbnew.ActionPlugin):
         dialog = ConfigDialog()
 
         try:
-            if self.config != None:
+            if self.config is not None:
                 dialog.SetConfig(self.config)
 
             if dialog.ShowModal() != wx.ID_OK:
